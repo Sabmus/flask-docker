@@ -26,6 +26,6 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          file: ./Dockerfile
+          file: ./docker-compose.dev.yml
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/flask-docker-dev:latest
